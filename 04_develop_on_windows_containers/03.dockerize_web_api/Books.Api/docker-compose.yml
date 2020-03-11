@@ -1,0 +1,20 @@
+version: '3.7'
+
+services: 
+    books-db:
+     image: 'mssql-express-init' 
+     ports:
+        - '1433:1433'
+     environment: 
+        - 'ACCEPT_EULA=Y'
+        - 'sa_password=MyCoolPassword@1234'
+        - attach_dbs=[{"dbName":"Books","dbFiles":["C:\\MSSQL\\Books.mdf","C:\\MSSQL\\Books_log.ldf"]}]
+    
+    books-api:
+     build: .
+     environment: 
+        BookContext: "Data Source=books-db,1433;Initial Catalog=Books;User ID=sa;Password=MyCoolPassword@1234"
+     depends_on: 
+        - 'books-db'
+     ports:
+        - '80:80'

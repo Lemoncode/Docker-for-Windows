@@ -1,0 +1,16 @@
+<div class="card card-block bg-faded" (click)="selectedGame(game.name)">
+  <div class="row">
+    <div class="col">
+      <label>Name:</label>
+      <span>{{game.name}}</span>
+    </div>
+    <div class="col">
+      <label>Name:</label>
+      <span>{{game.getYearsFromRelease()}}</span>
+    </div>
+    <div class="col">
+      <img class="img-fluid" [src]="game.imageUrl" alt="game image">
+    </div>
+  </div>
+</div>
+

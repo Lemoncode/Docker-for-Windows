@@ -1,0 +1,16 @@
+version: '3.7'
+
+services: 
+    db:
+     container_name: db
+     image: 'mssql-express-init' 
+     volumes:
+        - 'd:/data:C:/sqlserverexpress' 
+     ports:
+        - '1433:1433'
+     environment: 
+        - 'ACCEPT_EULA=Y'
+        - 'sa_password=MyCoolPassword@1234'
+        - attach_dbs=[{"dbName":"Books","dbFiles":["C:\\MSSQL\\Books.mdf","C:\\MSSQL\\Books_log.ldf"]}]
+volumes:
+   data:
