@@ -9,4 +9,4 @@ We are an innovating team of Javascript experts, passionate about turning your i
 
 [Lemoncode](http://lemoncode.net/services/en/#en-home) provides training services.
 
-For the LATAM/Spanish audience check our [Online Devops Bootcamp](https://lemoncode.net/bootcamp-devops#bootcamp-devops/inicio)
+For the LATAM/Spanish audience check out [Online Devops Bootcamp](https://lemoncode.net/bootcamp-devops#bootcamp-devops/inicio)
