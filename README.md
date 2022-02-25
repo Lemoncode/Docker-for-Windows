@@ -1,5 +1,5 @@
 # Docker-for-Windows
-Repository with samples of using Docker on Wimdows
+Repository with samples of using Docker on Windows
 
 # About Basefactor + Lemoncode
 
